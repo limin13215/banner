@@ -206,6 +206,12 @@ public class Banner extends FrameLayout implements OnPageChangeListener {
         return this;
     }
 
+	public Banner setPageMarginSize(){
+		if (viewPager != null) {
+			viewPager.setPageMargin(size);
+		}
+		return this;
+	}
     /**
      * Set a {@link PageTransformer} that will be called for each attached page whenever
      * the scroll position is changed. This allows the application to apply custom property
